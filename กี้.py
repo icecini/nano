@@ -78,8 +78,8 @@ lineMID = line.getProfile().mid
 # kcMID = ke.getProfile().mid
 # bot1 = line.getProfile().mid
 RfuBot=[lineMID]
-Family=["u3930826c2f2dbf7b11a27efbcc37add",lineMID]
-admin=['u3930826c2f2dbf7b11a27efbcc37add',lineMID]
+Family=["u32dcaab9a9d08a0a8a91dd1405fb1255",lineMID]
+admin=['u32dcaab9a9d08a0a8a91dd1405fb1255',lineMID]
 RfuFamily = RfuBot + Family
 
 protectname = []
