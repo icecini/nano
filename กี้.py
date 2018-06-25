@@ -466,7 +466,7 @@ def myhelp():
                   " ⏳ปิดกัน สมาชิก 💨 ปิดป้องกันสมาชิก⌛"+ "  \n" + \
                   " 🌛กันคน เข้า 💨 เปิดป้องกันคนเข้า🌜"+ "  \n" + \
                   " ☁ปิดกัน คนเข้า  💨 ปิดป้องกันคนเข้า⛅"+ "  \n" + \
-                  "⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️"
+                  "⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️"
     return myHelp
 
 
@@ -526,7 +526,7 @@ def helptexttospeech():
                          "╠ vi : Vietnamese" + "\n" + \
                          "╠ cy : Welsh" + "\n" + \
                          "╚══════════════┛" + "\n" + "\n\n" + \
-                          " ⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️ "
+                          " ⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️ "
     return helpTextToSpeech
     
 def helplanguange():
@@ -638,7 +638,7 @@ def helplanguange():
                        "╠ fil : Filipino" + "\n" + \
                        "╠ he : Hebrew" + "\n" + \
                        "╚══════════════┛" + "\n" + "\n\n" + \
-                       " ⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️ "
+                       " ⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️ "
     return helpLanguange
 #==============================================================================#
 def lineBot(op):
@@ -702,12 +702,12 @@ def lineBot(op):
 #==============================================================================#
                 elif text.lower() == 'Sp':
                     start = time.time()
-                    line.sendMessage(to, " ⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️ ")
+                    line.sendMessage(to, " ⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️ ")
                     elapsed_time = time.time() - start
                     line.sendMessage(to,format(str(elapsed_time)))	
                 elif text.lower() == 'sp':
                     start = time.time()
-                    line.sendMessage(to, " ⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️ ")
+                    line.sendMessage(to, " ⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️ ")
                     elapsed_time = time.time() - start
                     line.sendMessage(to,format(str(elapsed_time)))						
                 elif text.lower() == 'รีบูส':
@@ -722,13 +722,13 @@ def lineBot(op):
                 elif text.lower() == 'ไลน์':
                     try:
                         arr = []
-                        owner = "u3930826c2f2dbf7b11a27efbcc37add"
+                        owner = "u32dcaab9a9d08a0a8a91dd1405fb1255"
                         creator = line.getContact(owner)
                         contact = line.getContact(lineMID)
                         grouplist = line.getGroupIdsJoined()
                         contactlist = line.getAllContactIds()
                         blockedlist = line.getBlockedContactIds()
-                        ret_ = " ⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️ "
+                        ret_ = " ⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️ "
                         ret_ += "\nชื่อ ไลน์คุณ ⚔️ {}".format(contact.displayName)
                         ret_ += "\nรายการกลุ่ม ⚔️  {}".format(str(len(grouplist)))
                         ret_ += "\nรายการเพื่อน ⚔️  {}".format(str(len(contactlist)))
@@ -742,7 +742,7 @@ def lineBot(op):
 #==============================================================================#
                 elif text.lower() == 'เช็คตั้งค่า':
                     try:
-                        ret_ = "   ⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️ "
+                        ret_ = "   ⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️ "
 
                         if settings["autoJoin"] == True: ret_ += "\nเข้าห้องออโต้ × เปิด "
                         else: ret_ += "\nเข้าห้องออโต้ × ปิด"
@@ -992,10 +992,10 @@ def lineBot(op):
                     if settings["mimic"]["target"] == {}:
                         line.sendMessage(msg.to,"Tidak Ada Target")
                     else:
-                        mc = "   ⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️ "
+                        mc = "   ⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️ "
                         for mi_d in settings["mimic"]["target"]:
                             mc += "\n "+line.getContact(mi_d).displayName
-                        line.sendMessage(msg.to,mc + "\n    `~|°• πနးຫຮี่のีধ ์×…")
+                        line.sendMessage(msg.to,mc + "\n    `~|°• แมวกี้×…")
                     
                 elif "mimic" in msg.text.lower():
                     sep = text.split(" ")
@@ -1013,7 +1013,7 @@ def lineBot(op):
                     group = line.getGroup(to)
                     GS = group.creator.mid
                     line.sendContact(to, GS)
-                    line.sendMessage(to, "   `~|°• πနးຫຮี่のีধ ์×… ")
+                    line.sendMessage(to, "   `~|°• แมวกี้×… ")
                 elif text.lower() == 'ไอดีกลุ่ม':
                     gid = line.getGroup(to)
                     line.sendMessage(to, "→  ⚔️ " + gid.id + " ←")
@@ -1065,21 +1065,21 @@ def lineBot(op):
                         gQr = "Terbuka"
                         gTicket = "https://line.me/R/ti/g/{}".format(str(line.reissueGroupTicket(group.id)))
                     path = "http://dl.profile.line-cdn.net/" + group.pictureStatus
-                    ret_ = "   ⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️ "
+                    ret_ = "   ⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️ "
                     ret_ += "\nชื่อกลุ่ม ▷  {}".format(str(group.name))
                     ret_ += "\nGidกลุ่ม ▶  {}".format(group.id)
                     ret_ += "\nผู้สร้างกลุ่ม ▷  {}".format(str(gCreator))
                     ret_ += "\nจำนวนสมาชิก ▶ {}".format(str(len(group.members)))
                     ret_ += "\nสมาชิกค้างเชิญ ▷ {}".format(gPending)
                     ret_ += "\nQR ของกลุ่ม ▶ ".format(gQr)
-                    ret_ += "\n   ⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️ "
+                    ret_ += "\n   ⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️ "
                     line.sendMessage(to, str(ret_))
                     line.sendImageWithURL(to, path)
 
                 elif text.lower() == 'สมาชิก':
                     if msg.toType == 2:
                         group = line.getGroup(to)
-                        ret_ = "   ⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️ "
+                        ret_ = "   ⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️ "
                         no = 0 + 1
                         for mem in group.members:
                             ret_ += "\n↜ ↝ {}. {}".format(str(no), str(mem.displayName))
@@ -1088,7 +1088,7 @@ def lineBot(op):
                         line.sendMessage(to, str(ret_))
                 elif text.lower() == 'กลุ่ม':
                         groups = line.groups
-                        ret_ = "   ⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️ "
+                        ret_ = "   ⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️ "
                         no = 0 + 1
                         for gid in groups:
                             group = line.getGroup(gid)
@@ -1099,7 +1099,7 @@ def lineBot(op):
 
                 elif text.lower() == '1กลุ่ม':
                         groups = ki.groups
-                        ret_ = "   ⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️ "
+                        ret_ = "   ⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️ "
                         no = 0 + 1
                         for gid in groups:
                             group = ki.getGroup(gid)
@@ -1110,7 +1110,7 @@ def lineBot(op):
 
                 elif text.lower() == '2กลุ่ม':
                         groups = kk.groups
-                        ret_ = "   ⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️ "
+                        ret_ = "   ⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️ "
                         no = 0 + 1
                         for gid in groups:
                             group = kk.getGroup(gid)
@@ -2010,7 +2010,7 @@ def lineBot(op):
 
                 elif "Bcvoice " in msg.text:
                     bctxt = msg.text.replace("Bcvoice ", "")
-                    bc = ("⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️ \n`~|°• πနးຫຮี่のีধ ์×…")
+                    bc = ("⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️ \n`~|°• แมวกี้×…")
                     cb = (bctxt + bc)
                     tts = gTTS(cb, lang='id', slow=False)
                     tts.save('tts.mp3')
@@ -2020,7 +2020,7 @@ def lineBot(op):
 
                 elif "Cbcvoice " in msg.text:
                     bctxt = msg.text.replace("Cbcvoice ", "")
-                    bc = ("⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️ \n`~|°• πနးຫຮี่のีধ ์×…")
+                    bc = ("⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️ \n`~|°• แมวกี้×…")
                     cb = (bctxt + bc)
                     tts = gTTS(cb, lang='id', slow=False)
                     tts.save('tts.mp3')
@@ -2093,7 +2093,7 @@ def lineBot(op):
                         r = web.get("https://www.instagram.com/{}/?__a=1".format(search))
                         try:
                             data = json.loads(r.text)
-                            ret_ = " `~|°• πနးຫຮี่のีধ ์×… "
+                            ret_ = " `~|°• แมวกี้×… "
                             ret_ += "\n ชื่อ   {}".format(str(data["user"]["full_name"]))
                             ret_ += "\n ยูเซอเนม : {}".format(str(data["user"]["username"]))
                             ret_ += "\n ตัส  {}".format(str(data["user"]["biography"]))
@@ -2173,13 +2173,13 @@ def lineBot(op):
                     RfuCctv['point'][msg.to] = msg.id
                     RfuCctv['sidermem'][msg.to] = ""
                     RfuCctv['cyduk'][msg.to]=True
-                    line.sendMessage(msg.to,"  `~|°• πနးຫຮี่のีধ ์×…")
+                    line.sendMessage(msg.to,"  `~|°• แมวกี้×…")
                 elif msg.text in ["อ่านออโต้ปิด"]:
                     if msg.to in RfuCctv['point']:
                         RfuCctv['cyduk'][msg.to]=False
                         line.sendText(msg.to, RfuCctv['sidermem'][msg.to])
                     else:
-                        line.sendMessage(msg.to, " ⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️")
+                        line.sendMessage(msg.to, " ⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️")
 
 
 
@@ -2187,7 +2187,7 @@ def lineBot(op):
                     contactlist = line.getAllContactIds()
                     kontak = line.getContacts(contactlist)
                     num=1
-                    msgs="⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️"
+                    msgs="⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️"
                     for ids in kontak:
                         msgs+="\n[%i] %s" % (num, ids.displayName)
                         num=(num+1)
@@ -2198,7 +2198,7 @@ def lineBot(op):
                     blockedlist = line.getBlockedContactIds()
                     kontak = line.getContacts(blockedlist)
                     num=1
-                    msgs="`~|°• πနးຫຮี่のีধ ์×…"
+                    msgs="`~|°• แมวกี้×…"
                     for ids in kontak:
                         msgs+="\n[%i] %s" % (num, ids.displayName)
                         num=(num+1)
@@ -2209,7 +2209,7 @@ def lineBot(op):
                     gruplist = line.getAllContactIds()
                     kontak = line.getContacts(gruplist)
                     num=1
-                    msgs="`~|°• πနးຫຮี่のีধ ์×…"
+                    msgs="`~|°• แมวกี้×…"
                     for ids in kontak:
                         msgs+="\n[%i] %s" % (num, ids.mid)
                         num=(num+1)
@@ -2260,7 +2260,7 @@ def lineBot(op):
                          line.sendMessage(msg.to, "ตั้งข้อความเรืยบร้อย")
                      else:
                          settings["Respontag"] = spl
-                         line.sendMessage(msg.to, "⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️\n\n{}".format(str(spl)))
+                         line.sendMessage(msg.to, "⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️\n\n{}".format(str(spl)))
 
 
                 elif 'ทักออก: ' in msg.text:
@@ -2279,7 +2279,7 @@ def lineBot(op):
                          line.sendMessage(msg.to, "ตั้งข้อความคนเข้าเรียบร้อยแล้ว")
                      else:
                           settings["welcome"] = spl
-                          line.sendMessage(msg.to, "⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️\n\n\n{}".format(str(spl)))
+                          line.sendMessage(msg.to, "⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️\n\n\n{}".format(str(spl)))
 
                 elif msg.text.lower().startswith("ภาพ "):
                     sep = msg.text.split(" ")
@@ -3107,12 +3107,12 @@ def lineBot(op):
                     stk_id = msg.contentMetadata['STKID']
                     stk_ver = msg.contentMetadata['STKVER']
                     pkg_id = msg.contentMetadata['STKPKGID']
-                    ret_ = "   ⚔️ Sęłf ßÿ.•*ℜ✴ઙາのีধ์✴ℜ*• ⚔️"
+                    ret_ = "   ⚔️ Sęłf ßÿ.•*แมวกี้*• ⚔️"
                     ret_ += "\nSTICKER ID : {}".format(stk_id)
                     ret_ += "\nSTICKER PACKAGES ID : {}".format(pkg_id)
                     ret_ += "\nSTICKER VERSION : {}".format(stk_ver)
                     ret_ += "\nSTICKER URL : line://shop/detail/{}".format(pkg_id)
-                    ret_ += "\n   `~|°• πနးຫຮี่のีধ ์×…"
+                    ret_ += "\n   `~|°• แมวกี้×…"
                     line.sendMessage(to, str(ret_))
               
 #==============================================================================#
